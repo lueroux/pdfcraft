@@ -8,10 +8,13 @@ export const config = {
   // - API routes
   // - Static files (images, fonts, etc.)
   // - Next.js internals
+  // - Manifest file
+  // - Cookies and terms routes
   matcher: [
     // Match all pathnames except for
     // - ... if they start with `/api`, `/_next` or `/_vercel`
     // - ... if they contain a dot (e.g. `favicon.ico`)
-    '/((?!api|_next|_vercel|.*\\..*).*)',
+    // - ... if they are manifest, cookies, or terms
+    '/((?!api|_next|_vercel|manifest|cookies|terms|.*\\..*).*)',
   ],
 };
